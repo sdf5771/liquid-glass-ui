@@ -17,6 +17,7 @@ function Home() {
 
             </section>
             <LiquidGlassContainer 
+                murkiness='high'
                 style={
                     {
                         width: '300px', 
@@ -44,6 +45,7 @@ function Home() {
             </LiquidGlassContainer>
 
             <LiquidGlassContainer 
+                murkiness='medium'
                 style={
                     {
                         width: '300px', 
@@ -73,6 +75,7 @@ function Home() {
             </LiquidGlassContainer>
 
             <LiquidGlassContainer 
+                murkiness='clear'
                 style={
                     {
                         width: '120px', 
