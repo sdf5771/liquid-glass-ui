@@ -1,5 +1,5 @@
 import styles from './Home.module.css'
-import { LiquidGlassContainer } from '../../components/shared';
+import { LiquidGlassContainer, LiquidEffectGlassContainer } from '../../components/shared';
 
 function Home() {
     return (
@@ -103,6 +103,39 @@ function Home() {
                     }}
                 >H</h1>
             </LiquidGlassContainer>
+            <LiquidEffectGlassContainer 
+                style={
+                    {
+                        position: 'fixed', 
+                        top: '700px', 
+                        left: '50%', 
+                        transform: 'translateX(-50%)',
+                        minWidth: '300px',
+                        minHeight: '100px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                    }
+                }>
+                <div>
+                    <h1
+                        style={{
+                            fontSize: '30px',
+                            fontWeight: 'bold',
+                            color: '#fff',
+                            textShadow: '0 0 10px #00000066',
+                            textTransform: 'uppercase',
+                            letterSpacing: '1px',
+                        }}
+                    >Hello world</h1>
+                </div>
+                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px'}}>
+                    <div style={{width: '40px', height: '40px', backgroundColor: '#fff', borderRadius: '8px'}}></div>
+                    <div style={{width: '40px', height: '40px', backgroundColor: '#fff', borderRadius: '8px'}}></div>
+                    <div style={{width: '40px', height: '40px', backgroundColor: '#fff', borderRadius: '8px'}}></div>
+                    <div style={{width: '40px', height: '40px', backgroundColor: '#fff', borderRadius: '8px'}}></div>
+                </div>
+            </LiquidEffectGlassContainer>
         </main>
     )
 }
